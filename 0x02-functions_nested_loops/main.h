@@ -28,4 +28,7 @@ int add(int, int);
 /*Function prototype printto98*/                                                  
 void print_to_98(int n);
 
+/*Function prototype print_times_table*/      
+void print_times_table(int n);                                              
+
 #endif /* MAIN_H */
