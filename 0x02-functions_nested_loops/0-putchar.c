@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 /**
-  *main - This is the main function
+  *main - prints -putchar followed by a newline
   *
-  *Return - Always returns 0
-  */
+  *Description - The main function is the entry poin*
+  *
+  *Return: Always returns 0(success)
+ */
+
+
 int main(void)
 {
 	printf("_putchar");
