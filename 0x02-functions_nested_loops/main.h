@@ -5,6 +5,6 @@
 int _putchar(char c);
 
 /* Function prototype for _islower*/
-int _islower(int c);
+int _isalpha(int c);
 
 #endif /* MAIN_H */
