@@ -22,4 +22,7 @@ int print_last_digit(int n);
 /*Function prototype for times_table*/                                          
 void times_table(void);
 
+/*Function prototype for add*/                                          
+int add(int, int); 
+
 #endif /* MAIN_H */
