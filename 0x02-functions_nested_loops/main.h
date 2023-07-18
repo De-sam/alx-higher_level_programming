@@ -19,4 +19,7 @@ int print_last_digit(int n);
 /*Function prototype for jack_beauer*/                                           
  void jack_bauer(void);
 
+/*Function prototype for times_table*/                                          
+void times_table(void);
+
 #endif /* MAIN_H */
