@@ -13,4 +13,7 @@ int print_sign(int n);
 /*Function prototype for print_sign*/                                           
 int _abs(int n);
 
+/*Function prototype for print_sign*/                                           
+ int print_last_digit(int n);
+
 #endif /* MAIN_H */
