@@ -10,8 +10,11 @@ void print_alphabet(void);
 /* Function prototype for alphax10*/
 void print_alphabet_x10(void);
 
-/* Function prototype for _islower*/
+/* Function prototype for _isalpha*/
 int _isalpha(int c);
+
+/* Function prototype for _islower*/
+int _islower(int c);
 
 /*Function prototype for print_sign*/
 int print_sign(int n);
