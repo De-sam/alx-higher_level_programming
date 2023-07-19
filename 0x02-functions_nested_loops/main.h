@@ -8,7 +8,7 @@ int _putchar(char c);
 void print_alphabet(void);
 
 /* Function prototype for alphax10*/
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 
 /* Function prototype for _islower*/
 int _isalpha(int c);
