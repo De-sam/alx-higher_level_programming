@@ -16,7 +16,8 @@ char generate_random_digit() {
 
 // Function to generate a random valid password
 void generate_random_password(char *password, int length) {
-    for (int i = 0; i < length; i++) {
+    int i; // Move the variable declaration outside of the loop
+    for (i = 0; i < length; i++) {
         int type = rand() % 3; // Randomly choose the character type (letter, digit, or symbol)
 
         switch (type) {
