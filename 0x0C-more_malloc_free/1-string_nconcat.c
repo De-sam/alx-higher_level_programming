@@ -1,33 +1,42 @@
 #include "main.h"
-
+#include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array, using malloc
- * @nmemb: number of members in the array
- * @size: size in bytes
+ * string_nconcat - concatenates two strings.
+ * @s1: first string to copy
+ * @s2: second string to copy
+ * @n: number of bytes of s2 to copy
  *
- * Return: void pointer to allocated memory
+ * Return: char pointer to newly allocated place in memory
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = 0, l = 0;
-	char *p;
+	unsigned int i, j, k;
+	char *s;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	l = nmemb * size;
-	p = malloc(l);
-
-	if (p == NULL)
-		return (NULL);
-
-	while (i < l)
+	if (s1 == NULL)
+		i = 0;
+	else
 	{
-		p[i] = 0;
-		i++;
+		for (i = 0; s1[i]; i++)
+			;
 	}
-
-	return (p);
+	if (s2 == NULL)
+		j = 0;
+	else
+	{
+		for (j = 0; s2[j]; j++)
+			;
+	}
+	if (j > n)
+		j = n;
+	s = malloc(sizeof(char) * (i + j + 1));
+	if (s == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		s[k] = s1[k];
+	for (k = 0; k < j; k++)
+		s[k + i] = s2[k];
+	s[i + j] = '\0';
+	return (s);
 }
-
