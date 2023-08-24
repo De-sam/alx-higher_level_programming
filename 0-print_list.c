@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_list - Prints all the elements of a list_t list.
- * @h: The list_t list.
+ * print_list - Prints elements present in the list_t list.
+ * @h: This is the list_t list.
  *
- * Return: The number of nodes_count in h.
+ * Return: The total number nodes_count present in h.
  */
 
 size_t print_list(const list_t *h)

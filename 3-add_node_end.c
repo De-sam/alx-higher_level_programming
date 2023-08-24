@@ -2,13 +2,13 @@
 
 
 /**
- * add_node_end - Adds a new_node  at the end
- *                of a list_t list.
- * @head: A pointer the head of the list_t list.
- * @str: The string to be added to the list_t list.
+ * add_node_end - A new_node would be added at the end
+ *                of the list_t list.
+ * @head: Points to the head of the list_t list.
+ * @str: String to be added to the list_t list.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new_node element.
+ * Return: NULL -- if the function fails.
+ *         Else -- the address to the new_node value.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {

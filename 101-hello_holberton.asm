@@ -1,21 +1,14 @@
-extern printf
+section .data
+    hello_msg db "Hello, Holberton", 0
 
 section .text
-   global main
+    global main
+
+extern printf
 
 main:
-   push rbp
-
-   mov rdi,fmt
-   mov rsi,msg
-   mov rax,0
-   call printf
-
-   pop rbp
-
-   mov rax,0
-   ret
-
-section .data
-   msg: db "Hello, Holberton", 0
-   fmt: db "%s", 10, 0
+    push rdi                  ; Preserve the value of rdi register
+    lea rdi, [hello_msg]      ; Load the address of the hello_msg string into rdi
+    call printf              ; Call the printf function
+    pop rdi                   ; Restore the original value of rdi
+    ret

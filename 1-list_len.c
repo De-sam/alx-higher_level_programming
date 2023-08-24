@@ -1,16 +1,16 @@
 #include "lists.h"
 
 /**
- * list_len - Finds the number of countsin
+ * list_len - Looks for  the total number of counts present in
  *            a linked list_t list.
- * @h: The linked list_t list.
+ * @h: This is the linked list_t list.
  *
- * Return: The number of counts in h.
+ * Return: The total counts present in h.
  */
 
 size_t list_len(const list_t *h)
 {
-	size_t counts= 0;
+	size_t counts = 0;
 
 	while (h != NULL)
 	{

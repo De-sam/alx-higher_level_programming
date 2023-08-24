@@ -2,13 +2,13 @@
 
 
 /**
- * add_node - Adds a new_node  at the beginning
+ * add_node - This adds a new_node  to the beginning
  *            of a list_t list.
- * @head: A pointer to the head of the list_t list.
- * @str: The string to be added to the list_t list.
+ * @head: A pointer pointing to the head of the list_t list.
+ * @str: String to be added to the list_t list.
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new_node element.
+ * Return: NULL-- if the function fails.
+ *         Else - the address of the new_node value.
  */
 list_t *add_node(list_t **head, const char *str)
 {
