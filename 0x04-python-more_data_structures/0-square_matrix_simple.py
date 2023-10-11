@@ -1,5 +1,6 @@
-from math import pow
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-	new_matrix = [[num ** 2 for num in sublist] for sublist in matrix]
-	return new_matrix
-	
+    if matrix == []:
+        return matrix
+    new = [[x**2 for x in i] for i in matrix]
+    return new
