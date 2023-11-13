@@ -1,1 +1,0 @@
-# base model for almost a circle
